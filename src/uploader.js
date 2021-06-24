@@ -57,6 +57,7 @@ export default class Uploader {
 
     // default uploading
     } else {
+      console.log('the endpoint byfile url=' + this.config.endpoints.byFile);
       upload = ajax.transport({
         url: this.config.endpoints.byFile,
         data: this.config.additionalRequestData,

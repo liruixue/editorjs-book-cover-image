@@ -35,7 +35,7 @@ npm i --save-dev @editorjs/image
 Include module at your application
 
 ```javascript
-import ImageTool from '@editorjs/image';
+import BookCoverToolfrom '@editorjs/image';
 ```
 
 ### Other methods
@@ -58,10 +58,10 @@ Then require this script on page with Editor.js through the `<script src=""></sc
 Add a new Tool to the `tools` property of the Editor.js initial config.
 
 ```javascript
-import ImageTool from '@editorjs/image';
+import BookCoverToolfrom '@editorjs/image';
 
-// or if you inject ImageTool via standalone script
-const ImageTool = window.ImageTool;
+// or if you inject BookCoverToolvia standalone script
+const BookCoverTool= window.ImageTool;
 
 var editor = EditorJS({
   ...
@@ -228,7 +228,7 @@ Both methods must return a Promise that resolves with response in a format that 
 Example:
 
 ```js
-import ImageTool from '@editorjs/image';
+import BookCoverToolfrom '@editorjs/image';
 
 var editor = EditorJS({
   ...

@@ -31,7 +31,7 @@
  */
 
 /**
- * @typedef {object} ImageToolData
+ * @typedef {object} BCoverToolData
  * @description Image Tool's input and output data format
  * @property {string} caption — image caption
  * @property {boolean} withBorder - should image be rendered with border
@@ -74,7 +74,7 @@ import Uploader from './uploader';
  *                           also can contain any additional data that will be saved and passed back
  * @property {string} file.url - [Required] image source URL
  */
-export default class ImageTool {
+export default class BookCoverTool{
   /**
    * Notify core that read-only mode is supported
    *
@@ -100,7 +100,7 @@ export default class ImageTool {
 
   /**
    * @param {object} tool - tool properties got from editor.js
-   * @param {ImageToolData} tool.data - previously saved data
+   * @param {BCoverToolData} tool.data - previously saved data
    * @param {ImageConfig} tool.config - user config for Tool
    * @param {object} tool.api - Editor.js API
    * @param {boolean} tool.readOnly - read-only mode flag
@@ -181,7 +181,7 @@ export default class ImageTool {
    *
    * @public
    *
-   * @returns {ImageToolData}
+   * @returns {BCoverToolData}
    */
   save() {
     const caption = this.ui.nodes.caption;
@@ -292,7 +292,7 @@ export default class ImageTool {
    *
    * @private
    *
-   * @param {ImageToolData} data - data in Image Tool format
+   * @param {BCoverToolData} data - data in Image Tool format
    */
   set data(data) {
     this.image = data.file;
@@ -312,7 +312,7 @@ export default class ImageTool {
    *
    * @private
    *
-   * @returns {ImageToolData}
+   * @returns {BCoverToolData}
    */
   get data() {
     return this._data;

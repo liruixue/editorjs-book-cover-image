@@ -119,7 +119,6 @@
   &--withBackground {
     ^&__image {
       padding: 15px;
-      background: var(--bg-color);
 
       &-picture {
         max-width: 60%;

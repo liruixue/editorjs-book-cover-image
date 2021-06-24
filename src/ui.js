@@ -89,7 +89,7 @@ export default class Ui {
   /**
    * Renders tool UI
    *
-   * @param {ImageToolData} toolData - saved tool data
+   * @param {BCoverToolData} toolData - saved tool data
    * @returns {Element}
    */
   render(toolData) {

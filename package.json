@@ -1,16 +1,17 @@
 {
-  "name": "@editorjs/image",
+  "name": "editorjs-book-cover-image",
   "version": "2.6.0",
   "keywords": [
     "codex editor",
     "tool",
+    "book",
+    "cover",
     "image",
-    "editor.js",
     "editorjs"
   ],
-  "description": "Image Tool for Editor.js",
+  "description": "book cover image Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/image",
+  "repository": "https://github.com/liruixue/editorjs-book-cover-image",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",

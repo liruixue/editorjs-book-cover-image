@@ -62,7 +62,7 @@ export default class Tunes {
   /**
    * Makes buttons with tunes: add background, add border, stretch image
    *
-   * @param {ImageToolData} toolData - generate Elements of tunes
+   * @param {BCoverToolData} toolData - generate Elements of tunes
    * @returns {Element}
    */
   render(toolData) {
